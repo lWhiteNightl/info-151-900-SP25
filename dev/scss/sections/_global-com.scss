@@ -6,8 +6,39 @@
 #global-com{
     text-align: center;
 
-    p{
-        margin: 24px, 0, 24px;
+    @include helpers.md {
+        display: grid;
+        grid-template-areas: "global-content"
+                            "global-img";
+        grid-template-rows: 50% auto;
+    }
+
+
+    @include helpers.xl {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-areas: "global-content"
+                                "global-img";
+        padding: 20vw;
+        margin: 0 auto;
+    }
+
+    #global-com-header{
+        @include helpers.md {
+            grid-area: global-content;
+        }
+        p{
+            margin: 24px, 0, 24px;
+        }
+
+    }
+
+    img{
+        @include helpers.md {
+            grid-area: global-img;
+            display: block;
+            margin: 0 auto;
+        }
     }
 
 }

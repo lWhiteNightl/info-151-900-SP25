@@ -6,6 +6,24 @@
 #about{
     padding: 40px 24px;
 
+    @include helpers.md{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "img-1 card-1"
+                             "img-2 card-2";
+        padding: 60px 10vw;
+    }
+
+    @include helpers.xl{
+        display: grid;
+        margin: 0 auto;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "img-1 card-1"
+                             "img-2 card-2";
+        gap: 16px;
+        padding: 60px 10vw;
+    }
+
     section{
         .about-p{
             margin: 24px 0 48px;
@@ -18,6 +36,30 @@
                     font-size: helpers.rem-calc(20);
                     font-weight: 600;
                     margin-bottom: 8px;
+                }
+            }
+
+            .green-list-item{
+                @include helpers.md{
+                    grid-area: card-1;
+                }
+            }
+
+            .card-2{
+                @include helpers.md{
+                    grid-area: card-2;
+                }
+            }
+
+            .img-1{
+                @include helpers.md{
+                    grid-area: img-1;
+                }
+            }
+
+            .img-2{
+                @include helpers.md{
+                    grid-area: img-2;
                 }
             }
         }
