@@ -559,18 +559,14 @@ textarea {
     Global Com
 ============= */
 #global-com {
-  padding: 107px 24px;
-}
-#global-com .global-com-top-content {
+  padding: 40px 24px;
   text-align: center;
-  margin-bottom: 48px;
 }
-#global-com .global-com-top-content p {
+#global-com p {
   color: var(--grey);
   font-weight: 600;
-  line-height: 1rem;
   line-height: 1.75rem;
-  margin-top: 24px;
+  margin: 24px, 0, 24px;
 }
 
 /* =============
