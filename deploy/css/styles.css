@@ -366,6 +366,12 @@ body {
   line-height: 4.0625rem;
 }
 
+.body-grey-text {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
 /* =============
     Buttons
 ============= */
@@ -430,9 +436,6 @@ textarea {
   padding: 56px 25px;
 }
 #hero section article p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -532,9 +535,6 @@ textarea {
   padding: 60px 24px;
 }
 #newsletter #newsletter-content p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
   margin: 16px 0;
 }
 #newsletter #newsletter-content form input {
@@ -573,41 +573,27 @@ textarea {
     Process
 ============= */
 #process {
-  padding: 110px 24px;
+  padding: 40px 24px;
 }
-#process .process-top-content {
-  text-align: center;
-}
-#process .process-top-content p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1rem;
-  line-height: 1.75rem;
-}
-#process ul {
-  margin-top: 24px;
+#process .works-p {
+  margin: 12px 0 24px;
 }
 #process ul li {
+  border: 1px solid var(--lilyWhite);
   padding: 30px;
-  border-radius: 30px;
-  border: 1px solid #F5F5F7;
+  border-radius: 12px;
   margin-bottom: 24px;
-}
-#process ul li img {
-  margin-bottom: 50px;
+  background-color: var(--white);
 }
 #process ul li h2 {
-  color: var(--nightBlue);
   font-size: 1.5rem;
-  line-height: 2.125rem;
+  color: var(--nightBlue);
   font-weight: 600;
+  margin: 40px 0 12px;
 }
-#process ul li p {
-  color: var(--grey);
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  margin-top: 16px;
+#process ul #selected {
+  -webkit-box-shadow: 0px 30px 30px 0px rgba(3, 3, 37, 0.1);
+          box-shadow: 0px 30px 30px 0px rgba(3, 3, 37, 0.1);
 }
 
 /* =============
