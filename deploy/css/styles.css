@@ -353,6 +353,10 @@ ul li {
   width: 100%;
 }
 
+.content-padding {
+  padding: 40px 24px;
+}
+
 /* =============
     Typography
 ============= */
@@ -527,12 +531,9 @@ textarea {
 /* =============
     Newsletter
 ============= */
-#newsletter {
-  padding: 40px 24px;
-}
 #newsletter #newsletter-content {
   background-color: var(--lilyWhite);
-  padding: 60px 24px;
+  padding: 60px 16px;
 }
 #newsletter #newsletter-content p {
   margin: 16px 0;
@@ -559,22 +560,15 @@ textarea {
     Global Com
 ============= */
 #global-com {
-  padding: 40px 24px;
   text-align: center;
 }
 #global-com p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
   margin: 24px, 0, 24px;
 }
 
 /* =============
     Process
 ============= */
-#process {
-  padding: 40px 24px;
-}
 #process .works-p {
   margin: 12px 0 24px;
 }
@@ -600,30 +594,17 @@ textarea {
     about
 ============= */
 #about {
-  padding: 60px 24px;
+  padding: 40px 24px;
 }
-#about section {
-  margin-bottom: 69px;
-}
-#about section p {
-  color: var(--grey);
-  font-weight: 600;
-  line-height: 1.75rem;
-  font-size: 1rem;
-  margin: 16px 0;
+#about section .about-p {
+  margin: 24px 0 48px;
 }
 #about section ul li h2 {
   color: var(--nightBlue);
   font-size: 1.25rem;
-  line-height: 1.75rem;
   font-weight: 600;
+  margin-bottom: 8px;
 }
-#about section ul li p {
-  color: var(--grey);
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.75rem;
-}
-#about section ul .green-list-item {
-  margin-bottom: 16px;
+#about aside {
+  margin-top: 68px;
 }
