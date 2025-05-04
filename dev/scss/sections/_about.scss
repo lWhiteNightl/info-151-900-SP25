@@ -34,6 +34,23 @@
             }
 
             li{
+                @include helpers.sm{
+                    display: flex;
+                    align-items: center;
+                }
+
+                img{
+                    @include helpers.md{
+                        margin-top: -25px;
+                    }
+                }
+
+                .card-content{
+                    @include helpers.sm{
+                        margin-left: 24px;
+                    }
+
+                }
                 h2{
                     color: var(--nightBlue);
                     font-size: helpers.rem-calc(20);
