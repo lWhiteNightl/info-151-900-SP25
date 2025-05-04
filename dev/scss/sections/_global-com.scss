@@ -1,44 +1,35 @@
 /* =============
-    Global Com
+    Communication
 ============= */
 @use "../helpers";
 
-#global-com{
+
+#comms{
     text-align: center;
 
-    @include helpers.md {
-        display: grid;
-        grid-template-areas: "global-content"
-                            "global-img";
-        grid-template-rows: 50% auto;
-    }
-
-
-    @include helpers.xl {
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-areas: "global-content"
-                                "global-img";
-        padding: 20vw;
-        margin: 0 auto;
-    }
-
-    #global-com-header{
-        @include helpers.md {
-            grid-area: global-content;
+    #comms-content{
+        @include helpers.lg{
+            width: 992px;
+            margin: 0 auto;
         }
+
+
         p{
-            margin: 24px, 0, 24px;
+            margin: 24px 0px 48px;
+    
+            @include helpers.md{
+                padding: 0 8vw;
+                margin-bottom: 24px;
+            }
         }
-
     }
 
-    img{
-        @include helpers.md {
-            grid-area: global-img;
-            display: block;
+    #comms-img{
+        @include helpers.xl{
+            width: 1200px;
             margin: 0 auto;
         }
     }
 
+    
 }

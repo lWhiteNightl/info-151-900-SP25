@@ -1,24 +1,23 @@
 /* =============
-    Packages
+    packages
 ============= */
 @use "../helpers";
+
 
 #packages {
     background-color: var(--lilyWhite);
     padding: 100px 24px;
 
-    // h1{
-    //     color: var(--nightBlue);
-    // }
 
     #top-content{
         text-align: center;
+
         #package-button-container{
             background-color: var(--white);
             margin: 24px 0;
             padding: 8px;
             border-radius: 10px;
-            //week 4 code
+            // week 4 code
             display: inline-block;
     
             button{
@@ -29,7 +28,6 @@
                 background-color: var(--white);
                 color: var(--grey);
                 padding: 13px 18px;
-                border-radius: 8px;
             }
     
             #right-arrow{
@@ -39,10 +37,11 @@
                 border-radius: 8px;
             }
         }
-
     }
+    
 
     #package-card-container{
+
         @include helpers.md{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -56,7 +55,9 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "card-1 card-2 card-3";
             gap: 45px;
+
         }
+
 
         .package-card{
             background-color: var(--ghost);
@@ -78,7 +79,6 @@
                 font-size: helpers.rem-calc(14);
                 line-height: helpers.rem-calc(28);
                 font-weight: 600;
-
             }
 
             h3{
@@ -88,7 +88,7 @@
                 line-height: helpers.rem-calc(28);
             }
         }
-    
+
         .selected{
             background-color: var(--white);
         }

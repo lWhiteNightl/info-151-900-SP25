@@ -3,35 +3,36 @@
 ============= */
 @use "../helpers";
 
-#hero {
+#hero{
     background-color: var(--lilyWhite);
-    padding: 56px 25px;
+    padding: 56px 24px;
 
-    @include helpers.xl {
+    @include helpers.xl{
         padding: 100px 24px;
     }
 
 
-    #hero-content-container {
-        @include helpers.md {
+    #hero-content-container{
+
+        @include helpers.md{
             display: grid;
             grid-template-areas: "hero-img"
                                 "hero-content";
-            //grid-template-columns: 50% auto;
-        }
-
-
-        @include helpers.xl {
+            // grid-template-columns: 50% auto;
+        } 
+    
+        @include helpers.xl{
             grid-template-columns: 40% auto;
             grid-template-areas: "hero-content hero-img";
-
+    
             max-width: 1200px;
             margin: 0 auto;
         }
 
         //16px = 1em
-        section {
-            @include helpers.md {
+
+        section{
+            @include helpers.md{
                 grid-area: hero-content;
                 padding: 0 15vw;
             }
@@ -40,25 +41,18 @@
                 padding: 0 25vw;
             }
 
-            @include helpers.xl {
+            @include helpers.xl{
                 padding: 0;
             }
 
-            article {
-                // h1{
-                //     color: var(--nightBlue);
-                //     font-size: helpers.rem-calc(50);
-                // }
-
-                p {
-
+            article{
+                p{
                     margin-top: 24px;
                     margin-bottom: 24px;
                 }
 
-                // LOVE HATE //
-                a:link,
-                a:visited {
+                // LOVE HATE  //
+                a:link, a:visited{
                     // background-color: var(--nightBlue);
                     // color: var(--white);
                     // font-size: helpers.rem-calc(14);
@@ -66,14 +60,15 @@
                     // padding: 22px 36px;
                     // border-radius: 6px;
 
-                    // //code for week 4
+                    // // -- code for week 4
                     // display: inline-block;
+                    // // -- 
+                    
                 }
+                a:hover, a:focus{
 
-                a:hover,
-                a:focus {}
-
-                button {
+                }
+                button{
                     background-color: var(--white);
                     border: none;
                     height: 60px;
@@ -83,29 +78,28 @@
                 }
             }
 
-            #hero-card {
+            #hero-card{
                 background-color: var(--snowdrop);
                 margin-top: 70px;
                 padding: 24px 20px;
                 border-radius: 12px;
 
-                h5 {
+                h5{
                     color: var(--nightBlue);
                     font-weight: 600;
                     font-size: helpers.rem-calc(14);
                 }
 
-                p {
+                p{
                     font-size: helpers.rem-calc(14);
                     font-weight: 600;
-                    //line-height: helpers.rem-calc(24);
+                    // line-height: helpers.rem-calc(24);
                 }
             }
-
         }
 
-        aside {
-            @include helpers.md {
+        aside{
+            @include helpers.md{
                 grid-area: hero-img;
             }
         }
