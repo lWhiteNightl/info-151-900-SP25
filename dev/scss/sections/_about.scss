@@ -46,7 +46,7 @@
                 }
 
                 .card-content{
-                    @include helpers.sm{
+                    @include helpers.lg{
                         margin-left: 24px;
                     }
 
