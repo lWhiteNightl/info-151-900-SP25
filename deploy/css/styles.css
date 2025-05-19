@@ -583,7 +583,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   #packages #top-content {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto 70px;
   }
 }
@@ -867,6 +867,21 @@ textarea {
     margin: 0 auto;
   }
 }
+@media (min-width: 768px) {
+  #comms #comms-content #comms-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  #comms #comms-content #comms-title #comms-first-title {
+    margin-right: 16px;
+  }
+}
 #comms #comms-content p {
   margin: 24px 0px 48px;
 }
@@ -1128,24 +1143,20 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
-@media (min-width: 576px) {
-  #about section ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+#about section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#about section ul li img {
+  margin-right: 16px;
+  height: 52px;
+  width: 52px;
 }
 @media (min-width: 768px) {
   #about section ul li img {
-    margin-top: -25px;
-  }
-}
-@media (min-width: 992px) {
-  #about section ul li .card-content {
-    margin-left: 24px;
+    height: 60px;
+    width: 60px;
   }
 }
 #about section ul li h2 {

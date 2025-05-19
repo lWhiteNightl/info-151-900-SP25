@@ -34,23 +34,19 @@
             }
 
             li{
-                @include helpers.sm{
-                    display: flex;
-                    align-items: center;
-                }
+                display: flex;
 
                 img{
+                    margin-right: 16px;
+                    height: 52px;
+                    width: 52px;
+
                     @include helpers.md{
-                        margin-top: -25px;
+                        height: 60px;
+                    width: 60px;
                     }
                 }
 
-                .card-content{
-                    @include helpers.lg{
-                        margin-left: 24px;
-                    }
-
-                }
                 h2{
                     color: var(--nightBlue);
                     font-size: helpers.rem-calc(20);
